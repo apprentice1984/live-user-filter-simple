@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  /* display props */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position props */
+  /* box model props */
+  overflow: hidden;
+  height: 100vh;
+  background-image: linear-gradient(215deg, #fefefe, #f0f0f0, #fefefe);
+  /* typography  props */
+  font-family: 'Open Sans', sans-serif;
+  /* misc */
+}
+
+.container {
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #3d57db;
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.search {
+  background-color: #172da0;
+  padding: 20px 30px;
+}
+
+.search:hover {
+  cursor: text;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+}
+
+.title {
+  margin-bottom: 7px;
+  font-size: 1.5rem;
+}
+
+.search {
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  margin: 20px 0 0 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.userContainer {
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  padding: 25px;
+}
+
+.userContainer:not(:last-of-type) {
+  border-bottom: 2px solid #eee;
+}
+
+.userAvatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.userInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.userInfo h6 {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.users {
+  height: 500px;
+  overflow: scroll;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
